@@ -61,7 +61,7 @@ def req_reverse_sort(number, length=None):
 		length = 10 ** (len(str(number)) - 1)	
 	elif length // 10 == 0: 
 		return number
-	return number % 10 * length + req_reverse_sort(number // 10, length // 10)	
+	return number % 10 * length + req_reverse_sort(number // 10, length // 10)
 
 '''
 Данная реализация не изменяет тип данных и сокращает время выполнения алгоритма.
